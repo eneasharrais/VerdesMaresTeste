@@ -1,0 +1,93 @@
+/*Laptop*/
+@media screen and (min-device-width: 1200px){
+  #NavbarLogo{width: 100px;}
+  .jumbotron-text{margin-top: 200px;margin-left: 15px;}
+  .jumbotron-subtext{margin-left: 120px;}
+  .text-autor{width: 100px;}
+  .spotlight-container{margin-top: -80px;}
+}
+/* Celular Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+
+}
+/* Tablet Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+{
+
+}
+/* Tablet Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
+{
+
+}
+footer{
+  margin-top: 50px;
+}
+
+.jumbotron {
+background:linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url("assets/jumbotron_bg.jpg");
+background-size: cover;
+}
+.jumbotron-text{
+  color: white;
+  display: inline-flex;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.jumbotron-subtext{
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.card-spotlight{
+  width: 20%;
+  margin: 0px 10px 0px;
+  cursor: pointer;
+}
+.card-spotlight:hover{
+  background-color: gray;
+  color: white;
+}
+
+.nav-link{
+  margin: 0px 20px 0px;
+}
+.footer-link{
+  color: rgba(0, 0, 0, 0.5) ;
+}
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+.hvr-underline-from-left:hover {
+  color: #2098D1 !important;
+}
+
+.img-circle{
+  border-radius: 50%;
+}
