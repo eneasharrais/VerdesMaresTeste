@@ -1,15 +1,12 @@
 /*Laptop*/
 @media screen and (min-device-width: 1200px){
   #NavbarLogo{width: 100px;}
-  .jumbotron-text{margin-top: 200px;margin-left: 15px;}
-  .jumbotron-subtext{margin-left: 120px;}
-  .spotlight-end-text{margin-top: 50px;margin-left: 15px;}
-  .spotlight-end-subtext{margin-left: 120px;}
-  .text-autor{width: 100px;}
-  .spotlight-container{margin-top: -80px; margin-bottom: 20px;}
-  .twothirds-img{height: 300px;}
+  .text-autor{width: 130px;}
+  .text-autor-thumbnail{width: 70px;}
   .onethirds-img{height: 200px;}
-  .onethirds-img-big{height: 300px;}
+  .container{margin-top: 50px;}
+  .tag-side{font-size: 12px;}
+  .header-img{height: 400px; overflow: hidden; margin-top: 15px;}
 }
 /* Celular Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
@@ -18,88 +15,31 @@
 /* Tablet Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
 {
-  #NavbarLogo{width: 100px;}
-  .jumbotron-text{margin-top: 200px;margin-left: 15px;}
-  .jumbotron-subtext{margin-left: 120px;}
-  .spotlight-end-text{margin-top: 50px;margin-left: 15px;}
-  .spotlight-end-subtext{margin-left: 120px;}
-  .text-autor{width: 100px;}
-  .spotlight-container{margin-top: -80px; margin-bottom: 20px;}
-  .twothirds-img{height: 300px;}
-  .onethirds-img{height: 200px;}
-  .onethirds-img-big{height: 300px;}
 }
 /* Tablet Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
 {
-  #NavbarLogo{width: 100px;}
-  .jumbotron-text{margin-top: 200px;margin-left: 15px;}
-  .jumbotron-subtext{margin-left: 120px;}
-  .spotlight-end-text{margin-top: 50px;margin-left: 15px;}
-  .spotlight-end-subtext{margin-left: 120px;}
-  .text-autor{width: 100px;}
-  .spotlight-container{margin-top: -80px; margin-bottom: 20px;}
-  .twothirds-img{height: 300px;}
-  .onethirds-img{height: 200px;}
-  .onethirds-img-big{height: 300px;}
-}
-
-/*Spotlight*/
-.spotlight-start {
-  background:linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url("assets/jumbotron_bg.jpg");
-  background-size: cover;
-}
-.jumbotron-text{
-  color: white;
-  max-width: 80%;
-  display: inline-flex;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-.jumbotron-subtext{
-  color: white;
-  text-transform: uppercase;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-.card-spotlight{
-  width: 20%;
-  margin: 0px 10px 0px;
-  cursor: pointer;
-}
-.card-spotlight:hover{
-  background-color: gray;
-  color: white;
-}
-.spotlight-end{
-  width: 100%;
-  height: 300px;
-  background:linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url("assets/jumbotron_bg.jpg");
-  background-size: cover;
-}
-.spotlight-end-text{
-  color: white;
-  max-width: 80%;
-  display: inline-flex;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-.spotlight-end-subtext{
-  color: white;
-  text-transform: uppercase;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 /*Stories*/
-.twothirds-img{
-  overflow: hidden;
+.header-autortext{
+  display: inline-flex;
+  height: 50px;
 }
-.twothirds-text{
-  cursor: pointer;
+.header-autortext span{
+  border-right: 1px solid #dedede;
+  padding: 0px 20px;
 }
-.twothirds-text:hover{
-  color: #2098D1 !important;
+.main-text{
+  max-width: 100%;
+  margin: 30px 0px 30px;
+  text-align: justify;
 }
-.twothirds-subtext{
-  text-transform: uppercase;
-  margin-bottom: 15px;
+.text-tags{
+  display: inline;
+}
+.thumbnail-text{
+  display: inline-flex;
 }
 .onethirds-img{
   overflow: hidden;
@@ -118,10 +58,17 @@
   margin: 20px 0px 20px;
   text-transform:uppercase;
 }
+.tag-side{
+  margin: 4px 0px 4px;
+  text-transform:uppercase;
+}
 .socialmedia{
   overflow: hidden;
 }
 /*Elementos Globais*/
+ul{
+  list-style-type: none;
+}
 img{
   width: 100%;
 }
