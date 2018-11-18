@@ -1,6 +1,7 @@
 /*Laptop*/
 @media screen and (min-device-width: 1200px){
   #NavbarLogo{width: 100px;}
+  #searchbar{margin-top: 50px;}
   .text-autor{width: 130px;}
   .text-autor-thumbnail{width: 70px;}
   .onethirds-img{height: 200px;}

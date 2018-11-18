@@ -1,7 +1,9 @@
 /*Laptop*/
 @media screen and (min-device-width: 1200px){
   #NavbarLogo{width: 100px;}
-  .jumbotron-text{margin-top: 200px;margin-left: 15px;}
+  #searchbar{margin-top: 50px;}
+  #sideMenu{  display: none!important;}
+  .jumbotron-text{margin-top: 200px;margin-left: 15px;max-width: 80%;}
   .jumbotron-subtext{margin-left: 120px;}
   .spotlight-end-text{margin-top: 50px;margin-left: 15px;}
   .spotlight-end-subtext{margin-left: 120px;}
@@ -13,17 +15,39 @@
 }
 /* Celular Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
-
+  #NavbarLogo{width: 80px;}
+  .nav-item{padding-top:20px; padding-bottom: 20px;}
+  #searchbar{margin-top: 10px; width: 50%;}
+  .spotlight-start{height: -webkit-fill-available;}
+  .text-autor{width: 50px;margin-top: 100%; margin-left: 15px;}
+  .jumbotron-text{ margin-left: 15px; font-size: 32px;}
+  .jumbotron-subtext{margin-left: 15px;}
+  .spotlight-container{display: none;}
+  #autor-end{margin-top: 30%;}
+  .spotlight-end-text{margin-left: 15px; font-size: 24px;}
+  .spotlight-end-subtext{margin-left: 15px;}
+  footer{display: none;}
 }
 /* Tablet Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
 {
-
+  #NavbarLogo{width: 100px;}
+  #sideMenu{  display: none!important;}
+  #searchbar {display: none;}
+  .nav-item{padding-top:20px; padding-bottom: 20px;}
+  .text-autor{width: 50px;margin-left: 15px;}
+  .jumbotron-text{ margin-left: 15px; font-size: 32px;}
+  .jumbotron-subtext{margin-left: 15px;}
+  .spotlight-container{display: none;}
+  .spotlight-end-text{margin-left: 15px; font-size: 24px;}
+  .spotlight-end-subtext{margin-left: 15px;}
+  footer{display: none;}
 }
 /* Tablet Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
 {
   #NavbarLogo{width: 100px;}
+  #sideMenu{  display: none!important;}
   .jumbotron-text{margin-top: 200px;margin-left: 15px;}
   .jumbotron-subtext{margin-left: 120px;}
   .spotlight-end-text{margin-top: 50px;margin-left: 15px;}
@@ -42,7 +66,6 @@
 }
 .jumbotron-text{
   color: white;
-  max-width: 80%;
   display: inline-flex;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
@@ -154,6 +177,15 @@ footer{
   width: 80%;
   border-color: rgba(0, 0, 0, 0.5);
 }
+#sideMenu{
+  position: fixed;
+  background-color: #f8f9fa;
+  height: 100%;
+  width: 60%;
+  top: 80px;
+  left: 0px;
+  text-align: center;
+}
 
 /*Bibliotecas*/
 .hvr-underline-from-left {
@@ -204,4 +236,20 @@ footer{
   transform: scale(0.9);
   color: #2098D1 !important;
   cursor: pointer;
+}
+
+#sideMenu.collapsing {
+    height: auto;
+    -webkit-transition: left 0.1s ease;
+    -o-transition: left 0.1s ease;
+    -moz-transition: left 0.1s ease;
+    transition: left 0.1s ease;
+    left: -100%;
+}
+#sideMenu.show {
+    left: 0;
+    -webkit-transition: left 0.1s ease-in;
+    -o-transition: left 0.1s ease-in;
+    -moz-transition: left 0.1s ease-in;
+    transition: left 0.1s ease-in;
 }

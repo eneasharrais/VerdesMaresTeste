@@ -4,6 +4,9 @@
   <title>Verdes Mares Teste</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Test page made for Sistemas Verdes Mares test"/>
+  <meta name="keywords" content="Webdesigner, Wireframe, SEO, Test, Job">
+  <meta name="author" content="Eneas Arrais">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,6 +19,29 @@
 <body>
 
 <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex-md-column" id="sideMenu">
+      <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link hvr-underline-from-left" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hvr-underline-from-left" href="#">FASHION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hvr-underline-from-left" href="#">LIFESTYLE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hvr-underline-from-left" href="#">TRAVEL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hvr-underline-from-left" href="#">FOOD</a>
+      </li>
+      </ul>
+    </div>
+
     <a class="navbar-brand" href="index.html">
       <img src="assets/logo.png" alt="logo" id="NavbarLogo">
     </a>
@@ -41,9 +67,13 @@
       </li>
       </ul>
     </div>
-    <form class="form-inline">
-      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+    <form class="form-inline" id="searchbar">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+            <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+         </div>
+      </div>
     </form>
 </nav>
 
@@ -151,8 +181,8 @@
   <div class="row justify-content-md-center">
     <div class="jumbotron jumbotron-fluid spotlight-end">
       <div class="container">
-        <img src="assets/placeholder_user.png" class="text-autor img-circle" alt="">
-          <h2 class="spotlight-end-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper dui vel est dictum lobortis.</h2>
+        <img src="assets/placeholder_user.png" class="text-autor img-circle" alt="" id="autor-end">
+          <h2 class="spotlight-end-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
           <p class="spotlight-end-subtext">autor name | x MIN AGO</p>
       </div>
     </div>
@@ -163,16 +193,16 @@
   </div>
 
   <div class="row justify-content-md-center">
-    <div class="col-lg-3">
+    <div class="col-3">
       <div class="socialmedia-img"><img src="assets/placeholder.jpg" alt=""></div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-3">
       <div class="socialmedia-img"><img src="assets/placeholder.jpg" alt=""></div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-3">
       <div class="socialmedia-img"><img src="assets/placeholder.jpg" alt=""></div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-3">
       <div class="socialmedia-img"><img src="assets/placeholder.jpg" alt=""></div>
     </div>
   </div>
