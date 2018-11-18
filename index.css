@@ -18,16 +18,7 @@
 /* Tablet Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
 {
-  #NavbarLogo{width: 100px;}
-  .jumbotron-text{margin-top: 200px;margin-left: 15px;}
-  .jumbotron-subtext{margin-left: 120px;}
-  .spotlight-end-text{margin-top: 50px;margin-left: 15px;}
-  .spotlight-end-subtext{margin-left: 120px;}
-  .text-autor{width: 100px;}
-  .spotlight-container{margin-top: -80px; margin-bottom: 20px;}
-  .twothirds-img{height: 300px;}
-  .onethirds-img{height: 200px;}
-  .onethirds-img-big{height: 300px;}
+
 }
 /* Tablet Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
@@ -122,8 +113,22 @@
   overflow: hidden;
 }
 /*Elementos Globais*/
+body {
+ font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Crimson Text', serif;
+}
+a, span{
+ font-family: 'Lato', sans-serif;
+ font-weight: 600;
+}
 img{
   width: 100%;
+}
+footer{
+  margin-top: 30px;
+  border-top:1px solid rgba(0,0,0,0.5);
 }
 .nav-link{
   margin: 0px 20px 0px;
@@ -137,13 +142,17 @@ img{
 
 .linebreak{
   width:100%;
-  border-bottom:1px solid rgba(0,0,0,0.5);
   margin:10px 0 20px;
   text-transform: uppercase;
 }
 .linebreak span{
   background:#fff;
   padding:0 10px;
+}
+.break-line{
+  margin-top: -10px;
+  width: 80%;
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 /*Bibliotecas*/

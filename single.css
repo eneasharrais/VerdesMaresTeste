@@ -7,6 +7,9 @@
   .container{margin-top: 50px;}
   .tag-side{font-size: 12px;}
   .header-img{height: 400px; overflow: hidden; margin-top: 15px;}
+  .nav-btn{margin-top: 30px;}
+  #comment{margin: 20px 0px 20px;}
+  #reply-box{margin: 50px 0px 50px;}
 }
 /* Celular Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
@@ -15,10 +18,21 @@
 /* Tablet Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
 {
+
 }
 /* Tablet Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
 {
+  #NavbarLogo{width: 100px;}
+  .text-autor{width: 130px;}
+  .text-autor-thumbnail{width: 70px;}
+  .onethirds-img{height: 200px;}
+  .container{margin-top: 50px;}
+  .tag-side{font-size: 12px;}
+  .header-img{height: 400px; overflow: hidden; margin-top: 15px;}
+  .nav-btn{margin-top: 30px;}
+  #comment{margin: 20px 0px 20px;}
+  #reply-box{margin: 50px 0px 50px;}
 }
 
 /*Stories*/
@@ -66,11 +80,28 @@
   overflow: hidden;
 }
 /*Elementos Globais*/
+body {
+ font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Crimson Text', serif;
+}
+a, span{
+ font-family: 'Lato', sans-serif;
+ font-weight: 600;
+}
 ul{
   list-style-type: none;
 }
 img{
   width: 100%;
+}
+button{
+  text-transform: uppercase;
+}
+footer{
+  margin-top: 30px;
+  border-top:1px solid rgba(0,0,0,0.5);
 }
 .nav-link{
   margin: 0px 20px 0px;
@@ -84,13 +115,22 @@ img{
 
 .linebreak{
   width:100%;
-  border-bottom:1px solid rgba(0,0,0,0.5);
   margin:10px 0 20px;
   text-transform: uppercase;
 }
 .linebreak span{
   background:#fff;
   padding:0 10px;
+}
+.nav-btn{
+  text-transform: uppercase;
+  background:#fff;
+  padding:0 10px;
+}
+.break-line{
+  margin-top: -10px;
+  width: 80%;
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 /*Bibliotecas*/
